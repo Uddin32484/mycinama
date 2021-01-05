@@ -36,10 +36,10 @@ jobs:
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]
             then
-              git push https://heroku:$HEROKU_API_KEY_NEW@git.heroku.com/yubcinema.git ${CIRCLE_BRANCH}:master -f
+              git push https://heroku:$HEROKU_API_KEY@git.heroku.com/uddincinema.git ${CIRCLE_BRANCH}:master -f
            
             else
-              git push https://heroku:$HEROKU_API_KEY_NEW@git.heroku.com/yubcinema.git ${CIRCLE_BRANCH}:master -f
+              git push https://heroku:$HEROKU_API_KEY@git.heroku.com/uddincinema.git ${CIRCLE_BRANCH}:master -f
             fi
  
 workflows:
@@ -53,5 +53,5 @@ workflows:
             branches:
               only:
                 - master
-                - staging
+                - main
                 - producion
