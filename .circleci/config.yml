@@ -54,6 +54,6 @@ workflows:
           filters:
             branches:
               only:
-                - develop
+                - master
                 - staging
                 - producion
