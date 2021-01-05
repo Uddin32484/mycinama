@@ -36,7 +36,7 @@ jobs:
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]
             then
-              git push https://heroku:$HEROKU_API_KEY@git.heroku.com/deshicinama.git ${CIRCLE_BRANCH}:master -f
+              git push https://heroku:$HEROKU_API_KEY@git.heroku.com/yubcinema.git ${CIRCLE_BRANCH}:master -f
             elif [ "${CIRCLE_BRANCH}" == "develop" ]
             then
               git push https://heroku:$HEROKU_API_KEY@git.heroku.com/cinema-ap-staging.git ${CIRCLE_BRANCH}:master -f
